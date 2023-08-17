@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>FFVII</title>
+        <link rel="stylesheet" href="estilospras.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <section id="seleccionar-mascota">
+            <h1 id = "titulo">FINAL FANTASTICO VII</h1>
+            
+            <h2 class="subtilo">Elige a tu luchador:</h2>
+            
+            <div id="contendorluchadores" class="tarjetademokepon" >
+                
+                
+            </div>
+                <button id="boton-mascota">Seleccionar</button>
+            
+        </section>
+        <section id="ver-mapa">
+            <h2 class="subtilo">mundo</h2>
+            <canvas id="mapa"></canvas>
+            <button  ontouchend="detenermoviente()" onmouseup="detenermoviente()"  onmousedown="moverarriba()" ontouchstart="moverarriba()">arriba</button>
+            <div>
+                <button  ontouchend="detenermoviente()" onmouseup="detenermoviente()"onmousedown="moverizquierda()" ontouchstart="moverizquierda()">izquierda</button>
+                <button  ontouchend="detenermoviente()" onmouseup="detenermoviente()" onmousedown="moverabajo()" ontouchstart="moverabajo()">abajo</button>
+                <button  ontouchend="detenermoviente()" onmouseup="detenermoviente()"onmousedown="moverderecha()" ontouchstart="moverderecha()">derecha</button>
+            </div>
+
+
+
+        </section>
+        <section id="seleccionar-ataque">
+            <h1 id = "titulo">FINAL FANTASTICO VII</h1>
+            <h2 class="subtilo">Elige la materia con la que vas atacar :</h2>
+            <div id ="contenedorataques"class="tarjetas">
+                
+            </div>
+                
+            <div id="mensajes">
+                <p id="resultado"></p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div> 
+                
+            <div class="contenedor">
+                <div class="ataquesjuga">
+                    <p id="vidas-jugador">0</p>
+                    <p id="mascota-jugador"></p>
+                    
+                    <div id="ataquejug"></div>
+
+                </div>
+                <div class="ataquesene">
+                    <p id="vidas-enemigo">0</p>
+                    <p id="mascota-enemigo"></p>
+                   
+                    <div id="ataqueene"></div>
+                   
+                </div>  
+            </div>
+        </section>
+        <script src="./mokepon.js"></script>
+    </body>
+</html>

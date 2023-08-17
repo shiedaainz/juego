@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #990000;
+    background-image: url(./imagenes/Church-Aeris-FF7.jpg);
+}
+#titulo{
+    color:#FF1E00
+    ;
+    width: 315px;
+    height: 50px;
+}
+.subtilo{
+    color:#efff01;
+    font-size: 20px;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.tarjetademokepon,.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+.tarjetas img{
+    width: 40px;
+}
+.tarjetas::selection{
+    cursor:pointer;
+}
+.ataque:hover{
+    cursor: pointer;
+}
+.mokepon{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 197px;
+    height: 240px;
+    background: #f4845f;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+    border-radius: 20px;
+}
+.mokepon img{
+    width: 110px;
+}
+.mokepon:hover {
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: #E14D2A;
+}
+#boton-mascota{
+    width: 180px;
+    height: 50px;
+    background:#f4845f;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border: 2px solid #D4D925; 
+    border-radius: 20px;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.ataque{
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border-color: transparent;
+    color: white;
+
+
+}
+#mensajes{
+    width: 280px;
+    background-image:url(./imagenes/450_1000.jpg);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: #00ff3e;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#boton-reiniciar{
+     border: none;
+     color: #f4845f;
+     background: none;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 224px 234px;
+    color: red;
+    
+}
+.ataquesjuga, .ataquesene{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#990000;
+    background-image: url(./imagenes/pantalla.jpg);
+    margin-top: 40px;
+    border-radius: 40px;
+}
+#vidas-jugador,#mascota-jugador,#vidas-enemigo,#mascota-enemigo{
+    font-size: 55px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa button{
+    width: 80px;
+    height: 40px;
+    background:#f4845f;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 2px solid #D4D925; 
+    border-radius: 20px;
+}
+
+#mapa{
+    border:2px solid white;
+}
+@media(max-width:560px ){
+    .tarjetademokepon{
+        flex-direction: column;
+    }
+    .tarjetas{
+        flex-direction: column;
+    }
+    .ataquesjuga,.ataquesene{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width:300px ){
+   #ver-mapa div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+}
